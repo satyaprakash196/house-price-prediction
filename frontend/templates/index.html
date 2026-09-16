@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>House Price Estimator</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>House Price Estimator</h1>
+        <p class="subtitle">
+            Estimate your house price based on property details
+        </p>
+
+        <form id="priceForm">
+
+            <label for="location">Location</label>
+            <select id="location" required>
+                <option value="">Select Location</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Noida">Noida</option>
+                <option value="Gurgaon">Gurgaon</option>
+                <option value="Ghaziabad">Ghaziabad</option>
+            </select>
+
+            <label for="area">Area (sq ft)</label>
+            <input
+                type="number"
+                id="area"
+                placeholder="Example: 1200"
+                required
+            >
+
+            <label for="bedrooms">Bedrooms</label>
+            <input
+                type="number"
+                id="bedrooms"
+                min="1"
+                placeholder="Example: 2"
+                required
+            >
+
+            <label for="bathrooms">Bathrooms</label>
+            <input
+                type="number"
+                id="bathrooms"
+                min="1"
+                placeholder="Example: 2"
+                required
+            >
+
+            <label for="parking">Parking</label>
+            <input
+                type="number"
+                id="parking"
+                min="0"
+                value="1"
+                required
+            >
+
+            <label for="property_age">Property Age (years)</label>
+            <input
+                type="number"
+                id="property_age"
+                min="0"
+                placeholder="Example: 5"
+                required
+            >
+
+            <button type="submit">
+                Estimate Price
+            </button>
+
+        </form>
+
+        <div id="result" class="result"></div>
+
+    </div>
+
+    <script src="/static/js/script.js"></script>
+
+</body>
+</html>
