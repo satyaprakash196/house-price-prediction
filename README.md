@@ -1,5 +1,6 @@
 # house-price-prediction
-Dockerized 3-tier house price estimation application deployed on AWS EC2
+Dockerized 3-tier house price estimation application deployed on AWS EC2.
+"I developed a Dockerized 3-tier house price estimation application and deployed it on AWS EC2. Nginx acts as the reverse proxy and serves the frontend, while Flask with Gunicorn handles the backend API. MySQL stores location rates and prediction history. All application containers communicate through a custom Docker network, and MySQL uses a persistent Docker volume for data durability. I also implemented health checks and tested container-to-container connectivity for troubleshooting 502 and database connectivity issues."
 
 
 
